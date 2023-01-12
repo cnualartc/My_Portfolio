@@ -1,0 +1,75 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  font-family: 'Poppins'
+}
+
+.header-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0px 20px;
+}
+
+.logo {
+  padding: 10px;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  color: #6070ff;
+  
+}
+
+.menu {
+  padding-top: 5px;
+  padding-right: 10px;
+}
+
+.header-bottom {
+  height: 600px;
+  padding: 0px 20px;
+  background-image: url("./images/background/all_shapes.svg");
+  background-size: 100% 100%; 
+  background-repeat: no-repeat;
+}
+
+.greeting {
+  padding-right: 35px;
+  padding-top: 100px;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 52px;
+  color: #172b4d;
+  
+}
+
+.presentation {
+  font-style: normal;
+  font-weight: 400px;
+  font-size: 16px;
+  line-height: 24px;
+  color: #344563;
+  padding-top: 10px;
+  
+}
+
+.connect {
+  color: #7f8cff;
+  font-size: 16px;
+  padding: 15px 0px 10px 0px;
+}
+
+.media-icons {
+  width: 200px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.icons img {
+  height: 20px;
+  width: 20px;
+}
+
