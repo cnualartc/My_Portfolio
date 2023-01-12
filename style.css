@@ -31,7 +31,7 @@ header {
   height: 600px;
   padding: 0 20px;
   background-image: url("./images/background/all_shapes.svg");
-  background-size: 100% 100%; 
+  background-size: cover;
   background-repeat: no-repeat;
 }
 
@@ -51,7 +51,6 @@ header {
   line-height: 24px;
   color: #344563;
   padding-top: 10px;
-  
 }
 
 .connect {
