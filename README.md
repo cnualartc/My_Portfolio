@@ -1,11 +1,10 @@
 # My_Portfolio
 
-# Hello-World
 <a name="readme-top"></a>
 
 
 <div align="center">
-  <img src="images/my_logo.png" alt="logo" width="140"  height="auto" />
+  <img src="./images/my_logo.png" alt="logo" width="140"  height="auto" />
   <br/>
 
   <h3><b>My Portfolio README</b></h3>
