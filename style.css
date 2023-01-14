@@ -193,8 +193,8 @@ header {
 
 button {
   padding: 10px;
-  background-color:#ffffff;
-  font-family: 'Poppins';
+  background-color: #fff;
+  font-family: 'Poppins', sans-serif;
   font-size: 25px;
   color: #396df2;
   border: 1px solid #396df2;
@@ -240,7 +240,8 @@ button {
   border-bottom: 1px solid rgba(128, 128, 128, 0.219);
 }
 
-.list1, .languages-dropdown {
+.list1,
+.languages-dropdown {
   list-style: none;
   padding-top: 50px;
 }
@@ -248,7 +249,7 @@ button {
 .list1 a {
   text-decoration: none;
   font-size: 22px;
-  color: #000000;
+  color: #000;
   margin-bottom: 50px;
 }
 
