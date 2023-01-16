@@ -171,8 +171,13 @@ header {
   justify-content: start;
 }
 
+.tool-list {
+  list-style: none;
+}
+
 .tool {
-  display: inline-block;
+  float: left;
+  /* display: inline-block; */
   background-color: #ebebff;
   padding: 4px 12px;
   border-radius: 8px;
