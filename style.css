@@ -8,19 +8,21 @@ body {
   background-color: #f7f7f9;
 }
 
-header {
+.top {
+  width: 90%;
+  height: 48px;
+  margin: 0 auto;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 0 20px;
   background-color: #fff;
 }
 
 .logo {
-  padding: 10px;
   font-style: normal;
   font-weight: bold;
   font-size: 18px;
+  font-weight: 700;
 }
 
 .logo a {
@@ -30,22 +32,44 @@ header {
 
 .menu {
   padding-top: 5px;
-  padding-right: 10px;
+  margin-right: 30px;
+}
+
+.menu img {
+  display: inline;
+}
+
+.desktop-menu-list {
+  display: none;
+  font-size: 15px;
+}
+
+.menu-desktop {
+  list-style: none;
+  display: inline;
+  padding-left: 30px;
 }
 
 .header-bottom {
   height: 600px;
-  padding: 0 20px;
-  background-image: url("./images/background/all_shapes.svg");
-  background-size: 100% 100%;
-  background-repeat: no-repeat;
   margin-bottom: 150px;
   background-color: #fff;
   border-bottom-left-radius: 60px;
 }
 
-.greeting {
+.header-background {
+  width: 100%;
+  padding: 0 24px;
+  background-image: url("./images/background/all_shapes.svg");
+  /* background-size: cover; */
+  background-repeat: no-repeat;
   padding-top: 100px;
+}
+
+.greeting {
+  width: 327px;
+  height: 150px;
+  /* padding-top: 100px; */
   font-size: 30px;
   font-weight: 700;
   line-height: 52px;
@@ -53,14 +77,16 @@ header {
 }
 
 .presentation {
+  width: 327px;
   font-style: normal;
   font-size: 16px;
   line-height: 24px;
   color: #344563;
-  padding-top: 15px;
+  margin-top: 15px;
 }
 
 .connect {
+  width: 327px;
   color: #7f8cff;
   font-size: 16px;
   padding: 15px 0 10px 0;
@@ -311,7 +337,7 @@ button:disabled {
   padding-top: 5px;
 }
 
-.contact_me {
+.contact-me {
   background-color: #6070ff;
   border-top-left-radius: 100px;
 }
@@ -320,7 +346,14 @@ button:disabled {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-image: url(./images/background/form/contact\ form\ shapes-mobile.svg);
+}
+
+.form-area {
+  background-image: url(./images/background/form/contact_form_shapes_mobile.svg);
+  width: 95%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   background-repeat: no-repeat;
   background-position: right;
 }
@@ -381,4 +414,302 @@ textarea {
   border: 1px solid #cfd8dc;
   font-family: 'Poppins', sans-serif;
   font-size: 15px;
+}
+
+@media (min-width: 768px) {
+  header{
+    height: 72px;
+  }
+
+  .logo {
+    margin-top: 25px;
+
+    font-size: 20px;
+  }
+
+  .desktop-menu-list-container {
+    margin-top: 22px;
+  }
+  
+  .desktop-menu-list {
+    display: block;
+  }
+
+  .menu {
+    margin-right: 60px;
+  }
+
+  .menu img{
+    display: none;
+  }
+
+  .header-bottom {
+    height: 916px;
+  }
+
+  .header-background {
+    width: 95%;
+    height: 800px;
+    background-image: url(./images/background/background2.svg);
+    margin: 0 auto;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  .greeting,
+  .presentation,
+  .connect,
+  .media-icons {
+    width: 920px;
+  }
+
+  .greeting {
+    height: 110px;
+    margin: 220px auto 12px;
+    padding: 0;
+  }
+
+  .presentation {
+    font-size: 20px;
+    margin: 0 auto 12px;
+  }
+
+  .connect {
+    margin: 0 auto 12px;
+    padding: 0;
+  }
+
+  .media-icons {
+    margin: 0 auto 12px;
+  }
+
+  .works {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+  }
+
+  .grid-row {
+    width: 1156px;
+    height: 450px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas:
+    "card project project"
+    "card specs specs"
+    "card description description"
+    "card tools tools"
+    "card button button"
+    "card blank blank";
+    justify-items: start;
+    border: 1px solid #a7aeff;
+  }
+
+  .grid-row-reversed {
+    width: 1156px;
+    height: 450px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas:
+    "project project card"
+    "specs specs card"
+    "description description card"
+    "tools tools card"
+    "button button card"
+    "blank blank card";
+    justify-items: start;
+    border: 1px solid #a7aeff;
+  }
+
+  .grid-row:hover {
+    box-shadow: 0 10px 50px 0 #a7aeff;
+    cursor: pointer;
+  }
+
+  .card {
+    grid-area: card;
+    padding: 0 20px;
+  }
+
+  .project {
+    width: 496px;
+    margin-top: 30px;
+    grid-area: project;
+    display: flex;
+    justify-content: start;
+  }
+
+  .project-name {
+    width: auto;
+    font-size: 40px;
+  }
+
+  .project-name,
+  .project-specs,
+  .project-description,
+  .project-tools,
+  .card-button-style {
+    padding-left: 20px;
+  }
+
+  .specs {
+    width: 496px;
+    grid-area: specs;
+    display: flex;
+    justify-content: start;
+  }
+
+  .project-specs {
+    font-size: 18px;
+  }
+
+  .project-description {
+    width: 496px;
+  }
+
+  .description {
+    width: 496px;
+    grid-area: description;
+    display: flex;
+    justify-content: start;
+  }
+
+  .tools {
+    width: 496px;
+    grid-area: tools;
+    display: flex;
+    justify-content: start;
+    font-size: 12px;
+  }
+
+  .card-button {
+    width: 496px;
+    grid-area: button;
+    display: flex;
+    justify-content: start;
+  }
+
+  .blank {
+    grid-area: blank;
+  }
+
+  .image-container {
+    width: 544px;
+    height: 450px;
+    display: flex;
+    justify-content: center;
+    margin-top: 0;
+  }
+
+  .image-container img {
+    width: 544px;
+    height: 448px;
+  }
+
+  .about-myself {
+    width: 1156px;
+    height: 460px;
+    margin: 284px auto;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    justify-items: start;
+    align-items: start;
+    grid-template-areas:
+    "blank languages languages"
+    "title languages languages"
+    "paragraph languages languages"
+    "connect languages languages"
+    "icons languages languages"
+    "button languages languages";
+  }
+
+  .about-myself-title {
+    width: 250px;
+    font-size: 40px;
+    line-height: 52px;
+    grid-area: title;
+  }
+
+  .self-description {
+    width: 447px;
+    margin-top: 10px;
+    font-size: 16px;
+    line-height: 24px;
+    padding-top: 0;
+    grid-area: paragraph;
+  }
+
+  .about-myself-connect {
+    width: 447px;
+    grid-area: connect;
+  }
+
+  .about-myself-media-icons {
+    width: 447px;
+    grid-area: icons;
+  }
+
+  .about-myself-button {
+    width: 447px;
+    grid-area: button;
+  }
+
+  .dropdown-menu {
+    width: 684px;
+    margin-left: 23px;
+    padding-left: 10px;
+    grid-area: languages;
+  }
+
+  .blank {
+    grid-area: blank;
+  }
+
+  .languages-list {
+    display: flex;
+    justify-content: space-between;
+    width: 400px;
+  }
+
+  .dropdown {
+    font-size: 20px;
+  }
+
+  .language-tags {
+    font-size: 15px;
+  }
+
+  .html-css-js {
+    flex-direction: column;
+  }
+
+  .form-title {
+    margin-top: 142px;
+  }
+
+  .form-description {
+    width: 569px;
+  }
+
+  .contact-me {
+    border-top-left-radius: 120px;
+  }
+
+  .form-area {
+    background-image: none;
+    background-image: url(./images/background/form/contact_form_background_shapes_desktop.svg);
+    background-repeat: no-repeat;
+  }
+
+  .submit {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 127px;
+  }
+
 }

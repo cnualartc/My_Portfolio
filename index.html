@@ -12,16 +12,27 @@
 <body>
   
   <header>
+    <div class="top">
       <div class="logo">
         <a href="">My Logo</a>
       </div>
       <nav class="menu">
+        <div class="desktop-menu-list-container">
+          <ul class="desktop-menu-list">
+            <li class="menu-desktop">Portfolio</li>
+            <li class="menu-desktop">About</li>
+            <li class="menu-desktop">Contact</li>
+          </ul>
+        </div>
         <img src="./images/header/burger_menu.png" alt="menu button">
       </nav>
+    </div> 
   </header>
   <section class="header-bottom">
+    <div class="header-background">
       <div class="greeting">
-        <h1>I'm Christian <br>
+        <h1>
+          I'm Christian<br>
           Glad to see you!
         </h1>
       </div>
@@ -36,22 +47,23 @@
       <div class="media-icons">
         <ul class="icons">
           <li>
-            <a href=""><img src="./images/media_icons/twitter.svg" alt="twitter icon"></a>
+            <a href=""><img src="./images/media_icons/twitter.svg"alt="twitter icon"></a>
           </li>
           <li>
-            <a href=""><img src="./images/media_icons/linkedin.svg" alt="linkedin icon"></a>
+            <a href=""><img src="./images/media_icons/linkedin.svg"alt="linkedin icon"></a>
           </li>
           <li>
-            <a href=""><img src="./images/media_icons/mail.svg" alt="mail icon"></a>
+            <a href=""><img src="./images/media_icons/mail.svg" alt="mailicon"></a>
           </li>
           <li>
-            <a href=""><img src="./images/media_icons/github.svg" alt="github icon"></a>
+            <a href=""><img src="./images/media_icons/github.svg"alt="github icon"></a>
           </li>
           <li>
-            <a href=""><img src="./images/media_icons/hand.svg" alt="other icon"></a>
+            <a href=""><img src="./images/media_icons/hand.svg" alt="othericon"></a>
           </li>
         </ul>
       </div>
+    </div>
   </section>
   <section class="works">
     <div class="grid-row">
@@ -107,8 +119,9 @@
           </a>
         </div>
       </div>
+      <div class="blank"></div>
     </div>
-    <div class="grid-row">
+    <div class="grid-row grid-row-reversed">
       <div class="card">
         <div class="image-container">
           <img src="./images/works/image2.svg" alt="preview image of a project">
@@ -216,7 +229,7 @@
         </div>
       </div>
     </div>
-    <div class="grid-row">
+    <div class="grid-row grid-row-reversed">
       <div class="card">
         <div class="image-container">
           <img src="./images/works/image4.svg" alt="preview image of a project">
@@ -278,10 +291,10 @@
     <div class="self-description">
       <p>Hello I'm a software developer! I can help you build a product, feature or website. Look through some of my work and experience! If you like what you see and have a project you need coded, don't hesitate to contact me.</p>
     </div>
-    <div class="connect">
+    <div class="connect about-myself-connect">
       <p>LET'S CONNECT</p>
     </div>
-    <div class="media-icons">
+    <div class="media-icons about-myself-media-icons">
       <ul class="icons">
         <li>
           <a href=""><img src="./images/media_icons/twitter.svg" alt="twitter icon"></a>
@@ -309,7 +322,7 @@
       <ul class="list1">
         <li class="language-name">
           <div class="positioning">
-            <div>
+            <div class="dropdown">
               <a href="">Languages</a>
             </div>
             <div class="arrow">
@@ -317,41 +330,43 @@
             </div>
           </div>
         </li>
-            <ul class="languages-dropdown">
-              <li>
-                <div class="html-css-js">
-                  <div class="language-icons">
-                    <img src="./images/Languages/js.svg" alt="">
+          <ul class="languages-dropdown">
+              <div class="languages-list">
+                <li>
+                  <div class="html-css-js">
+                    <div class="language-icons">
+                      <img src="./images/Languages/js.svg" alt="">
+                    </div>
+                    <div class="language-tags">                  
+                      <p>JavaScript</p>
+                    </div>
                   </div>
-                  <div class="language-tags">                  
-                    <p>JavaScript</p>
+                </li>
+                <li>
+                  <div class="html-css-js">
+                    <div class="language-icons">
+                      <img src="./images/Languages/html.svg" alt="">
+                    </div>
+                    <div class="language-tags">                  
+                      <p>CSS</p>
+                    </div>
                   </div>
-                </div>
-              </li>
-              <li>
-                <div class="html-css-js">
-                  <div class="language-icons">
-                    <img src="./images/Languages/html.svg" alt="">
+                </li>
+                <li>
+                  <div class="html-css-js">
+                    <div class="language-icons">
+                      <img src="./images/Languages/css.svg" alt="">
+                    </div>
+                    <div class="language-tags">                  
+                      <p>HTML</p>
+                    </div>
                   </div>
-                  <div class="language-tags">                  
-                    <p>CSS</p>
-                  </div>
-                </div>
-              </li>
-              <li>
-                <div class="html-css-js">
-                  <div class="language-icons">
-                    <img src="./images/Languages/css.svg" alt="">
-                  </div>
-                  <div class="language-tags">                  
-                    <p>HTML</p>
-                  </div>
-                </div>
-              </li>
+                </li>
+              </div>
             </ul>
         <li class="language-name">
           <div class="positioning">
-            <div>
+            <div class="dropdown">
               <a href="">Frameworks</a>
             </div>
             <div class="arrow">
@@ -361,7 +376,7 @@
         </li>
         <li class="language-name">
           <div class="positioning">
-            <div>
+            <div class="dropdown">
               <a href="">Skills</a>
             </div>
             <div class="arrow">
@@ -372,31 +387,33 @@
       </ul>
     </div>
   </section>
-  <section class="contact_me">
+  <section class="contact-me">
     <div class="form-container">
-      <div class="form-title">
-        <p>Contact me</p>
+      <div class="form-area">
+        <div class="form-title">
+          <p>Contact me</p>
+        </div>
+        <div class="form-description">
+          <p>If you have an application you are interested in developing, a feature that you need built or a project that needs coding. I'd love to help with it.</p>
+        </div>
+        <form action="https://formspree.io/f/mjvdkrlo" method="post">
+          <div>
+            <label for="name"></label>
+            <input type="text" name="name" id="name" maxlength="30" placeholder="Name" required>
+          </div>
+          <div>
+            <label for="mail"></label>
+            <input type="email" name="mail" id="mail" placeholder="Email" required>
+          </div>
+          <div class="textBox">
+            <label for="text-box"></label>
+            <textarea name="text-box" id="text-box" cols="5" rows="10" placeholder="Write your message here" maxlength="500" required></textarea>
+          </div>
+          <div class="submit">
+            <button>Get in touch</button>
+          </div>
+        </form>
       </div>
-      <div class="form-description">
-        <p>If you have an application you are interested in developing, a feature that you need built or a project that needs coding. I'd love to help with it.</p>
-      </div>
-      <form action="https://formspree.io/f/mjvdkrlo" method="post">
-        <div>
-          <label for="name"></label>
-          <input type="text" name="name" id="name" maxlength="30" placeholder="Name" required>
-        </div>
-        <div>
-          <label for="mail"></label>
-          <input type="email" name="mail" id="mail" placeholder="Email" required>
-        </div>
-        <div class="textBox">
-          <label for="text-box"></label>
-          <textarea name="text-box" id="text-box" cols="5" rows="10" placeholder="Write your message here" maxlength="500" required></textarea>
-        </div>
-        <div class="submit">
-          <button>Get in touch</button>
-        </div>
-      </form>
     </div>
   </section>
 </body>
