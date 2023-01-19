@@ -426,7 +426,7 @@ textarea {
   .desktop-menu-list-container {
     margin-top: 22px;
   }
-  
+
   .desktop-menu-list {
     display: block;
   }
@@ -616,12 +616,12 @@ textarea {
     justify-items: start;
     align-items: start;
     grid-template-areas:
-    "blank languages languages"
-    "title languages languages"
-    "paragraph languages languages"
-    "connect languages languages"
-    "icons languages languages"
-    "button languages languages";
+      "blank languages languages"
+      "title languages languages"
+      "paragraph languages languages"
+      "connect languages languages"
+      "icons languages languages"
+      "button languages languages";
   }
 
   .about-myself-title {
