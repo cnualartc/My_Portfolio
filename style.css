@@ -20,7 +20,6 @@ body {
 
 .logo {
   font-style: normal;
-  font-weight: bold;
   font-size: 18px;
   font-weight: 700;
 }
@@ -37,6 +36,7 @@ body {
 
 .menu img {
   display: inline;
+  margin-right: 60px;
 }
 
 .desktop-menu-list {
@@ -61,7 +61,6 @@ body {
   width: 100%;
   padding: 0 24px;
   background-image: url("./images/background/all_shapes.svg");
-  /* background-size: cover; */
   background-repeat: no-repeat;
   padding-top: 100px;
 }
@@ -69,7 +68,6 @@ body {
 .greeting {
   width: 327px;
   height: 150px;
-  /* padding-top: 100px; */
   font-size: 30px;
   font-weight: 700;
   line-height: 52px;
@@ -90,7 +88,6 @@ body {
   color: #7f8cff;
   font-size: 16px;
   padding: 15px 0 10px 0;
-  width: 355px;
 }
 
 .icons {
@@ -417,13 +414,12 @@ textarea {
 }
 
 @media (min-width: 768px) {
-  header{
+  header {
     height: 72px;
   }
 
   .logo {
     margin-top: 25px;
-
     font-size: 20px;
   }
 
@@ -439,7 +435,7 @@ textarea {
     margin-right: 60px;
   }
 
-  .menu img{
+  .menu img {
     display: none;
   }
 
@@ -452,7 +448,7 @@ textarea {
     height: 800px;
     background-image: url(./images/background/background2.svg);
     margin: 0 auto;
-    background-size: contain;
+    background-size: 1600px;
     background-repeat: no-repeat;
     background-position: center;
   }
@@ -498,12 +494,12 @@ textarea {
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
     grid-template-areas:
-    "card project project"
-    "card specs specs"
-    "card description description"
-    "card tools tools"
-    "card button button"
-    "card blank blank";
+      "card project project"
+      "card specs specs"
+      "card description description"
+      "card tools tools"
+      "card button button"
+      "card blank blank";
     justify-items: start;
     border: 1px solid #a7aeff;
   }
@@ -515,12 +511,12 @@ textarea {
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
     grid-template-areas:
-    "project project card"
-    "specs specs card"
-    "description description card"
-    "tools tools card"
-    "button button card"
-    "blank blank card";
+      "project project card"
+      "specs specs card"
+      "description description card"
+      "tools tools card"
+      "button button card"
+      "blank blank card";
     justify-items: start;
     border: 1px solid #a7aeff;
   }
@@ -593,7 +589,7 @@ textarea {
     justify-content: start;
   }
 
-  .blank {
+  .blank1 {
     grid-area: blank;
   }
 
@@ -666,7 +662,7 @@ textarea {
     grid-area: languages;
   }
 
-  .blank {
+  .blank2 {
     grid-area: blank;
   }
 
@@ -704,6 +700,7 @@ textarea {
     background-image: none;
     background-image: url(./images/background/form/contact_form_background_shapes_desktop.svg);
     background-repeat: no-repeat;
+    background-size: 1600px;
   }
 
   .submit {
@@ -711,5 +708,4 @@ textarea {
     justify-content: center;
     margin-bottom: 127px;
   }
-
 }
