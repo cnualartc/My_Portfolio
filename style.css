@@ -12,9 +12,9 @@ body {
   overflow-x: hidden;
 }
 
-  header {
+header {
   display: flex;
-  justify-content: center;  
+  justify-content: center;
   background-color: #fff;
 }
 
@@ -109,9 +109,10 @@ body {
   padding: 15px 0 10px 0;
 }
 
-.media-icons{
+.media-icons {
   min-width: 327px;
   max-width: 920px;
+  margin-top: 12px;
 }
 
 .icons {
@@ -300,10 +301,6 @@ button:disabled {
   color: #344563;
 }
 
-.media-icons {
-margin-top: 12px;
-}
-
 .about-myself-button {
   margin-top: 12px;
 }
@@ -459,7 +456,7 @@ textarea {
 @media (min-width: 768px) {
   header {
     height: 72px;
-  }   
+  }
 
   .logo {
     margin-top: 25px;
@@ -486,7 +483,6 @@ textarea {
 
   .presentation {
     font-size: 20px;
-    margin-top: 0;
     margin: 0 auto 12px;
   }
 
@@ -526,7 +522,7 @@ textarea {
 
   .grid-row:hover {
     box-shadow: 10px 10px 10px #7f8cff;
-}
+  }
 
   .see-project-button:hover {
     cursor: pointer;
