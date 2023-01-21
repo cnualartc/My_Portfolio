@@ -38,6 +38,11 @@ header {
 .logo a {
   color: #6070ff;
   text-decoration: none;
+  transition: color 1s;
+}
+
+.logo a:hover {
+  color: red;
 }
 
 .menu {
