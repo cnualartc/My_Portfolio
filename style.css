@@ -35,13 +35,13 @@ header {
   font-weight: 700;
 }
 
-.logo a {
+.main-logo {
   color: #6070ff;
   text-decoration: none;
   transition: color 1s;
 }
 
-.logo a:hover {
+.main-logo:hover {
   color: red;
 }
 
