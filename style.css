@@ -523,10 +523,12 @@ textarea {
     border-radius: 15px;
     border: 1px rgba(128, 128, 128, 0.286) solid;
     background-color: #fff;
+    transition: margin-right 500ms;
   }
 
   .grid-row:hover {
     box-shadow: 10px 10px 10px #7f8cff;
+    margin-right: 20px;
   }
 
   .see-project-button:hover {
