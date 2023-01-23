@@ -54,7 +54,7 @@ To get a local copy up and running, follow these steps.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-You can deploy this project using: https://cnualartc.github.io/My_Portfolio/
+You can view this project live using: https://cnualartc.github.io/My_Portfolio/
 
 
 ## 👥 Authors <a name="authors"></a>
