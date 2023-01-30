@@ -84,6 +84,12 @@ Project presentation: https://www.loom.com/share/d48f63d493544b2fb8dca407dc65a02
 
 
 
+## 🤝 Contributing <a name="contributing"></a>
+
+Contributions, issues, and feature requests are welcome!
+
+Feel free to check the issues page. https://github.com/cnualartc/My_Portfolio/issues
+
 
 ## ⭐️ Show your support <a name="support"></a>
 
