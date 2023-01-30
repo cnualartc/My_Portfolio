@@ -12,26 +12,25 @@
 <body>
   
   <header>
-    <div class="top mobile-button-clicked">
+    <div class="top">
       <div class="logo">
         <a class="main-logo" href="#">My Logo</a>
       </div>
-      <nav class="menu mobile-navbar">
-        <div class="desktop-menu-list-container visible">
-          <ul class="desktop-menu-list mobile-menus">
-            <li class="menu-desktop">
+      <nav class="menu ">
+        <div class="desktop-menu-list-container ">
+          <ul class="desktop-menu-list">
+            <li class="menu-desktop" onclick="hideMobileMenu()">
               <a href="#portfolio">Portfolio</a>
             </li>
-            <li class="menu-desktop">
+            <li class="menu-desktop" onclick="hideMobileMenu()">
               <a href="#about">About</a>
             </li>
-            <li class="menu-desktop">
+            <li class="menu-desktop" onclick="hideMobileMenu()">
               <a href="#contact">Contact</a>
             </li>
           </ul>
         </div>
-        <img src="./images/header/icon-cancel.svg" id="cancel-button" alt="menu button">
-        <!-- <img src="./images/header/burger_menu.png" alt="menu button"> -->
+        <img id="hamburger" src="./images/header/burger_menu.png" alt="menu button">
       </nav>
     </div> 
   </header>
@@ -401,5 +400,6 @@
       </div>
     </div>
   </section>
+  <script src="./script.js"></script>
 </body>
 </html>
