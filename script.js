@@ -29,4 +29,3 @@ menu.onclick = () => {
     showMobileMenu();
   }
 };
-
