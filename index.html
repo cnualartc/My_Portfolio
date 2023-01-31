@@ -7,30 +7,30 @@
   <link rel="stylesheet" href="style.css">
   <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
-  <title>Document</title>
+  <title>My Portfolio</title>
 </head>
 <body>
   
   <header>
     <div class="top">
       <div class="logo">
-        <a class="main-logo" href="">My Logo</a>
+        <a class="main-logo" href="#">My Logo</a>
       </div>
-      <nav class="menu">
+      <nav class="menu ">
         <div class="desktop-menu-list-container">
           <ul class="desktop-menu-list">
-            <li class="menu-desktop">
-              <a href="">Portfolio</a>
+            <li class="menu-desktop" onclick="hideMobileMenu()">
+              <a href="#portfolio">Portfolio</a>
             </li>
-            <li class="menu-desktop">
-              <a href="">About</a>
+            <li class="menu-desktop" onclick="hideMobileMenu()">
+              <a href="#about">About</a>
             </li>
-            <li class="menu-desktop">
-              <a href="">Contact</a>
+            <li class="menu-desktop" onclick="hideMobileMenu()">
+              <a href="#contact">Contact</a>
             </li>
           </ul>
         </div>
-        <img src="./images/header/burger_menu.png" alt="menu button">
+        <img id="hamburger" src="./images/header/burger_menu.png" alt="menu button">
       </nav>
     </div> 
   </header>
@@ -79,7 +79,7 @@
       </div>
     </div>
   </section>
-  <section class="works">
+  <section id="portfolio" class="works">
     <div class="works-container">
       <div class="grid-row">
         <div class="card1">
@@ -259,7 +259,7 @@
       </div>
     </div>
   </section>
-  <section class="about-myself">
+  <section id="about" class="about-myself">
     <div class="about-myself-container">
       <div class="about1">
         <div class="about-myself-title">
@@ -369,7 +369,7 @@
       </div>
     </div> 
   </section>    
-  <section class="contact-me">
+  <section id="contact" class="contact-me">
     <div class="contact-me-background">
       <div class="form-container">
         <div class="form-area">
@@ -400,5 +400,6 @@
       </div>
     </div>
   </section>
+  <script src="./script.js"></script>
 </body>
 </html>
