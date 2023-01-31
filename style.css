@@ -202,6 +202,43 @@ header {
   margin-bottom: 114px;
 }
 
+.popup-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-color: rgb(159, 38, 38);
+  overflow: hidden;
+  padding: 60px 16px 50px;
+}
+
+.popup {
+  border-radius: 16px;
+  background-color: #fff;
+
+}
+
+.popup-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-right: 30px;
+}
+
+.popup-title {
+  padding-top: 18px;
+  margin-left: 16px;
+}
+
+.popup-close-button {
+  border: none;
+  color: #67798E;
+  font-size: 30px;
+  padding: 0;
+  height: 30px;
+}
+
 .grid-row {
   min-width: 315px;
   margin-left: 24px;
