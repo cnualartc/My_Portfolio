@@ -38,31 +38,35 @@ let projectInfo = [
   {
     name: 'Topic',
     specs: ['Canopy', 'Back End Dev', 2015],
-    description: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
+    description:
+      'A daily selection of privately personalized reads; no accounts or sign-ups required.',
     tools: ['HTML', 'CSS', 'JavaScript'],
-    image: './images/works/image1.svg'
+    image: './images/works/image1.svg',
   },
   {
     name: 'Multi-Post Stories',
     specs: ['Canopy', 'Back End Dev', 2015],
-    description: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
+    description:
+      'A daily selection of privately personalized reads; no accounts or sign-ups required.',
     tools: ['HTML', 'CSS', 'JavaScript'],
-    image: './images/works/image2.svg'
+    image: './images/works/image2.svg',
   },
   {
     name: 'Topic',
     specs: ['Canopy', 'Back End Dev', 2015],
-    description: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
+    description:
+      'A daily selection of privately personalized reads; no accounts or sign-ups required.',
     tools: ['HTML', 'CSS', 'JavaScript'],
-    image: './images/works/image3.svg'
+    image: './images/works/image3.svg',
   },
   {
     name: 'Multi-Post Stories',
     specs: ['Canopy', 'Back End Dev', 2015],
-    description: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
+    description:
+      'A daily selection of privately personalized reads; no accounts or sign-ups required.',
     tools: ['HTML', 'CSS', 'JavaScript'],
-    image: './images/works/image4.svg'
-  }
+    image: './images/works/image4.svg',
+  },
 ];
 
 function showModal(index) {
@@ -73,14 +77,11 @@ function showModal(index) {
   popup.style.display = 'block';
   document.body.style.maxHeight = '100vh';
   document.body.style.overflow = 'hidden';
-  document.body.scrollTop = 0;
+  window.scrollTo(0, 0);
 }
-
-buttonTest.onclick = (ev) => {ev.preventDefault();
-  showModal(0);
-};
 
 function hideModal() {
   popup.style.display = 'none';
   document.body.style.maxHeight = 'auto';
+  document.body.style.overflow = 'auto';
 }
