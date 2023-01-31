@@ -211,6 +211,7 @@ header {
   background-color: #c1c7d088;
   backdrop-filter: blur(5px);
   padding: 60px 16px 50px;
+  display: none;
 }
 
 .popup {
