@@ -7,6 +7,8 @@ const popup = document.querySelector('.popup-container');
 const popupTitle = document.querySelector('.popup-title');
 const popupImage = document.getElementById('popup-image');
 const description = document.querySelector('.popup-description');
+const modalButton = document.querySelectorAll('.see-project-button');
+const closeButton = document.querySelector('.popup-close-button');
 
 function showMobileMenu() {
   wrapper.classList.add('mobile-button-clicked');
@@ -34,7 +36,7 @@ menu.onclick = () => {
   }
 };
 
-let projectInfo = [
+const projectInfo = [
   {
     name: 'Topic',
     specs: ['Canopy', 'Back End Dev', 2015],
@@ -70,7 +72,7 @@ let projectInfo = [
 ];
 
 function showModal(index) {
-  let project = projectInfo[index];
+  const project = projectInfo[index];
   popupTitle.textContent = project.name;
   popupImage.src = project.image;
   description.textContent = project.description;
@@ -85,3 +87,9 @@ function hideModal() {
   document.body.style.maxHeight = 'auto';
   document.body.style.overflow = 'auto';
 }
+
+modalButton.forEach(element => element.addEventListener('click', (e) => {
+  showModal(e.target.dataset.id);
+}));
+
+closeButton.addEventListener('click', hideModal);

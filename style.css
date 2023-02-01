@@ -262,6 +262,17 @@ header {
   margin: 10px 0;
 }
 
+button {
+  padding: 10px;
+  background-color: #fff;
+  font-family: 'Poppins', sans-serif;
+  font-size: 17px;
+  color: #396df2;
+  border: 1px solid #396df2;
+  border-radius: 10px;
+  transition-duration: 0.3s;
+}
+
 .popup-buttons {
   display: flex;
   justify-content: center;
@@ -387,17 +398,6 @@ header {
   background-color: #fff;
   border-bottom-left-radius: 15px;
   border-bottom-right-radius: 15px;
-}
-
-button {
-  padding: 10px;
-  background-color: #fff;
-  font-family: 'Poppins', sans-serif;
-  font-size: 17px;
-  color: #396df2;
-  border: 1px solid #396df2;
-  border-radius: 10px;
-  transition-duration: 0.3s;
 }
 
 button:hover {
