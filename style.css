@@ -405,6 +405,10 @@ button:hover {
   color: #fff;
 }
 
+.popup-close-button:hover {
+  background-color: #fff;
+}
+
 button:active {
   background-color: #2230d2;
 }
