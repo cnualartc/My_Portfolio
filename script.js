@@ -88,8 +88,8 @@ function hideModal() {
   document.body.style.overflow = 'auto';
 }
 
-modalButton.forEach(element => (element.addEventListener('click', (e) => {
+modalButton.forEach((element) => element.addEventListener('click', (e) => {
   showModal(e.target.dataset.id);
-})));
+}));
 
 closeButton.addEventListener('click', hideModal);
