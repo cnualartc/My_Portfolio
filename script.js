@@ -9,6 +9,9 @@ const popupImage = document.getElementById('popup-image');
 const description = document.querySelector('.popup-description');
 const modalButton = document.querySelectorAll('.see-project-button');
 const closeButton = document.querySelector('.popup-close-button');
+const form = document.querySelector('form');
+const email = document.getElementById('mail');
+const errorMessage = document.getElementById('error-message');
 
 function showMobileMenu() {
   wrapper.classList.add('mobile-button-clicked');
@@ -93,3 +96,15 @@ modalButton.forEach((element) => element.addEventListener('click', (e) => {
 }));
 
 closeButton.addEventListener('click', hideModal);
+
+form.addEventListener('submit', (event) => {
+  const lowerCase = email.value.toLowerCase();
+  if (lowerCase !== email.value) {
+    errorMessage.style.visibility = 'visible';
+    errorMessage.textContent = `Form not submited. Email should be in lower case! Try: ${lowerCase}`;
+    event.preventDefault();
+  } else {
+    errorMessage.style.visibility = 'hidden';
+    event.target.submit();
+  }
+});
