@@ -13,8 +13,13 @@ const form = document.querySelector('form');
 const email = document.getElementById('mail');
 const errorMessage = document.getElementById('error-message');
 const inputName = document.getElementById('name');
-const message = document. getElementById('text-box');
-
+const message = document.getElementById('text-box');
+const rawData = localStorage.getItem('cachedFormData');
+let formObject = {
+  name: '',
+  mail: '',
+  'text-box': '',
+};
 
 function showMobileMenu() {
   wrapper.classList.add('mobile-button-clicked');
@@ -94,9 +99,11 @@ function hideModal() {
   document.body.style.overflow = 'auto';
 }
 
-modalButton.forEach((element) => element.addEventListener('click', (e) => {
-  showModal(e.target.dataset.id);
-}));
+modalButton.forEach((element) =>
+  element.addEventListener('click', (e) => {
+    showModal(e.target.dataset.id);
+  })
+);
 
 closeButton.addEventListener('click', hideModal);
 
@@ -112,24 +119,17 @@ form.addEventListener('submit', (event) => {
   }
 });
 
-let formObject = {
-  name: '',
-  mail: '',
-  'text-box': ''
-};
-
-const rawData = localStorage.getItem('info');
 if (rawData) {
   formObject = JSON.parse(rawData);
   inputName.value = formObject.name;
   email.value = formObject.mail;
-  message.value = formObject["text-box"];
-};
+  message.value = formObject['text-box'];
+}
 
 const dataStore = (event) => {
   const element = event.target;
   formObject[element.name] = element.value;
-  localStorage.setItem('info', JSON.stringify(formObject));
+  localStorage.setItem('cachedFormData', JSON.stringify(formObject));
 };
 
 inputName.addEventListener('change', dataStore);
