@@ -92,9 +92,7 @@ function hideModal() {
 }
 
 modalButton.forEach((element) =>
-  element.addEventListener('click', (e) => {
-    showModal(e.target.dataset.id);
-  }));
+  element.addEventListener('click', (e) => { showModal(e.target.dataset.id);}));
 
 closeButton.addEventListener('click', hideModal);
 
