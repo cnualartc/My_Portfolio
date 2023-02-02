@@ -12,6 +12,14 @@ const closeButton = document.querySelector('.popup-close-button');
 const form = document.querySelector('form');
 const email = document.getElementById('mail');
 const errorMessage = document.getElementById('error-message');
+const inputName = document.getElementById('name');
+const message = document.getElementById('text-box');
+const rawData = localStorage.getItem('cachedFormData');
+let formObject = {
+  name: '',
+  mail: '',
+  'text-box': '',
+};
 
 function showMobileMenu() {
   wrapper.classList.add('mobile-button-clicked');
@@ -101,10 +109,27 @@ form.addEventListener('submit', (event) => {
   const lowerCase = email.value.toLowerCase();
   if (lowerCase !== email.value) {
     errorMessage.style.visibility = 'visible';
-    errorMessage.textContent = `Form not submited. Email should be in lower case! Try: ${lowerCase}`;
+    errorMessage.textContent = `Form not submitted. Email should be in lower case! Try: ${lowerCase}`;
     event.preventDefault();
   } else {
     errorMessage.style.visibility = 'hidden';
     event.target.submit();
   }
 });
+
+if (rawData) {
+  formObject = JSON.parse(rawData);
+  inputName.value = formObject.name;
+  email.value = formObject.mail;
+  message.value = formObject['text-box'];
+}
+
+const dataStore = (event) => {
+  const element = event.target;
+  formObject[element.name] = element.value;
+  localStorage.setItem('cachedFormData', JSON.stringify(formObject));
+};
+
+inputName.addEventListener('change', dataStore);
+email.addEventListener('change', dataStore);
+message.addEventListener('change', dataStore);
