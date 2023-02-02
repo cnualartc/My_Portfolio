@@ -91,9 +91,11 @@ function hideModal() {
   document.body.style.overflow = 'auto';
 }
 
-modalButton.forEach((element) => element.addEventListener('click', (e) => {
-  showModal(e.target.dataset.id);
-}));
+modalButton.forEach((element) =>
+  element.addEventListener('click', (e) => {
+    showModal(e.target.dataset.id);
+  })
+);
 
 closeButton.addEventListener('click', hideModal);
 
@@ -102,10 +104,10 @@ form.addEventListener('submit', (event) => {
   console.log(lowerCase);
   if (lowerCase !== email.value) {
     errorMessage.style.visibility = 'visible';
-    errorMessage.textContent = 'email is incorrect';
+    errorMessage.textContent = `Email is incorrect, it should be all in lower case! Try: ${lowerCase}`;
     event.preventDefault();
   } else {
     errorMessage.style.visibility = 'hidden';
-    event.target.submit();    
+    event.target.submit();
   }
-})
+});
