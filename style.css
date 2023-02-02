@@ -585,6 +585,12 @@ form div {
   margin-bottom: 20px;
 }
 
+#error-message {
+  margin-bottom: 20px;
+  color: orange;
+  visibility: hidden;
+}
+
 textarea {
   width: 308px;
   height: 170px;
