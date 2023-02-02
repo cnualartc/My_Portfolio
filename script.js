@@ -100,7 +100,6 @@ closeButton.addEventListener('click', hideModal);
 
 form.addEventListener('submit', (event) => {
   const lowerCase = email.value.toLowerCase();
-  console.log(lowerCase);
   if (lowerCase !== email.value) {
     errorMessage.style.visibility = 'visible';
     errorMessage.textContent = `Form not submited. Email should be in lower case! Try: ${lowerCase}`;
