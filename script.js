@@ -94,8 +94,7 @@ function hideModal() {
 modalButton.forEach((element) =>
   element.addEventListener('click', (e) => {
     showModal(e.target.dataset.id);
-  })
-);
+  }));
 
 closeButton.addEventListener('click', hideModal);
 
@@ -104,7 +103,7 @@ form.addEventListener('submit', (event) => {
   console.log(lowerCase);
   if (lowerCase !== email.value) {
     errorMessage.style.visibility = 'visible';
-    errorMessage.textContent = `Email is incorrect, it should be all in lower case! Try: ${lowerCase}`;
+    errorMessage.textContent = `Form not submited. Email should be in lower case! Try: ${lowerCase}`;
     event.preventDefault();
   } else {
     errorMessage.style.visibility = 'hidden';
