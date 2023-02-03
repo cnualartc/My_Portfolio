@@ -10,7 +10,7 @@ const description = document.querySelector('.popup-description');
 const modalButton = document.querySelectorAll('.see-project-button');
 const closeButton = document.querySelector('.popup-close-button');
 const form = document.querySelector('form');
-const email = document.getElementById('mail');
+const email = document.getElementById('.mail');
 const errorMessage = document.getElementById('error-message');
 const inputName = document.getElementById('name');
 const message = document. getElementById('text-box');
@@ -90,7 +90,7 @@ function showModal(index) {
 
 function hideModal() {
   popup.style.display = 'none';
-  document.body.style.maxHeight = 'auto';
+  document.body.style.maxHeight = 'auto'
   document.body.style.overflow = 'auto';
 }
 
@@ -123,7 +123,7 @@ if (rawData) {
   formObject = JSON.parse(rawData);
   inputName.value = formObject.name;
   email.value = formObject.mail;
-  message.value = formObject["text-box"];
+  message.value = formObject("text-box");
 };
 
 const dataStore = (event) => {
