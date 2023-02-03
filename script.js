@@ -100,12 +100,12 @@ modalButton.forEach((element) => element.addEventListener('click', (e) => {
 
 closeButton.addEventListener('click', hideModal);
 
-form.addEventListener('submit', (event) => {
+form.addEventListener('submit', event => {
   const lowerCase = email.value.toLowerCase();
   if (lowerCase !== email.value) {
     errorMessage.style.visibility = 'visible';
     errorMessage.textContent = `Form not submitted. Email should be in lower case! Try: ${lowerCase}`;
-    event.preventDefault();
+    event.preventDefault;
   } else {
     errorMessage.style.visibility = 'hidden';
     event.target.submit();
